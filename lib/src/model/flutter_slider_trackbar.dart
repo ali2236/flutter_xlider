@@ -9,6 +9,7 @@ class FlutterSliderTrackBar {
   final double inactiveTrackBarHeight;
   final Widget? centralWidget;
   final bool activeTrackBarDraggable;
+  final Widget? activeTrackBarWidget;
 
   const FlutterSliderTrackBar({
     this.inactiveTrackBar,
@@ -19,6 +20,7 @@ class FlutterSliderTrackBar {
     this.inactiveTrackBarHeight = 3,
     this.centralWidget,
     this.activeTrackBarDraggable = true,
+    this.activeTrackBarWidget,
   }) : assert(activeTrackBarHeight > 0 && inactiveTrackBarHeight > 0);
 
   @override
@@ -35,6 +37,8 @@ class FlutterSliderTrackBar {
         '-' +
         inactiveTrackBarHeight.toString() +
         '-' +
-        centralWidget.toString();
+        centralWidget.toString() +
+        '-' +
+        activeTrackBarWidget.toString();
   }
 }

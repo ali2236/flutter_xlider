@@ -2189,6 +2189,7 @@ class _FlutterSliderState extends State<FlutterSlider>
         child: Container(
           height: height,
           width: width,
+          child: widget.trackBar.activeTrackBarWidget,
           decoration: BoxDecoration(
               color: trackBarColor,
               backgroundBlendMode: boxDecoration.backgroundBlendMode,
